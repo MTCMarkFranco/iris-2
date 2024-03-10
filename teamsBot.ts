@@ -26,9 +26,9 @@ export class TeamsBot extends TeamsActivityHandler {
       // Initialize MSAL
       const msalConfig = {
         auth: {
-          clientId: "YOUR_CLIENT_ID",
-          clientSecret: "YOUR_CLIENT_SECRET",
-          authority: "YOUR_AUTHORITY",
+          clientId: "04e40a47-8f9e-4a24-8fc6-8f5f3a5a9328",
+          clientSecret: "t4F8Q~4CLFV1~2zCtvpFTwd~4xL85WQFbIz5Qcpo",
+          authority: "https://login.microsoftonline.com/b51d8ca7-faa4-413d-8717-8394e361608f",
         },
       };
 
@@ -40,7 +40,7 @@ export class TeamsBot extends TeamsActivityHandler {
         account: {
           homeAccountId: context.activity.from.aadObjectId,
           environment: "login.microsoftonline.com",
-          tenantId: "12345678900",
+          tenantId: "b51d8ca7-faa4-413d-8717-8394e361608f",
           username: context.activity.from.id,
           localAccountId: context.activity.from.aadObjectId,
         }
